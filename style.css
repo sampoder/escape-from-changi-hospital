@@ -1,0 +1,92 @@
+body {
+  background: #252429;
+  font-family: 'Courier New', Courier, monospace
+}
+
+.holder-grid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.board{
+  background: url(http://www.textures4photoshop.com/tex/thumbs/corkboard-background-with-seamless-cork-texture-thumb47.jpg);
+  background-size: 50%;
+  background-repeat: repeat;
+  height: 88vh;
+  margin: 3vh;
+  border-radius: 16px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  padding: 3vh;
+  position: relative;
+  margin-left: 0vh;
+  margin-right: 0vh
+}
+
+h1{
+  background: white;
+  padding: 12px 24px;
+  width: max-content;
+  position: relative;
+  transform: rotate(-5deg);
+}
+
+h1:before{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+.h1-pin{
+  position: absolute;
+  top: calc(3vh + 0.37em);
+  left: 10vw;
+  height: 54px;
+}
+
+#ghost-image{
+  filter: grayscale(1);
+  transform: rotate(1deg);
+  margin-top: 16px;
+  width: 400px;
+  margin-left: 32px;
+}
+
+.note {
+  box-sizing: border-box;
+  min-width: 0;
+  background-color: #e8e0cc;
+  transform: rotate(-0.5deg);
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+  border-radius: 0px;
+  color: #222;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.125);
+  padding: 16px;
+}
+
+iframe {
+  min-width: 0;
+  background-color: #e8e0cc;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+  border-radius: 16px;
+  color: #222;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.125);
+  height: 88vh;
+  padding: 3vh 0vh;
+  margin: 3vh;
+  margin-left: 0vh;
+}
